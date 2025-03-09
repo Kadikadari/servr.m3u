@@ -1,3 +1,7 @@
 #EXTM3U
-https://raw.githubusercontent.com/Kadikadari/servr.m3u/refs/heads/main/arabfilm.m3u
-https://raw.githubusercontent.com/Kadikadari/servr.m3u/refs/heads/main/muslslat.m3u
+#EXTINF:-1 tvg-logo="https://www2.0zz0.com/2025/03/08/12/634553297.jpg" group-title="افلام",هجرة الرسول
+https://shoofmax.b-cdn.net/hijrat-alrasool/variant.m3u8
+#EXTINF:-1 tvg-logo="https://www2.0zz0.com/2025/03/08/01/189295981.jpg" group-title="افلام",اعدام بريء
+https://shoofmax.b-cdn.net/idam-bari/720p/index.m3u8
+#EXTINF:-1 tvg-logo="https://www2.0zz0.com/2025/03/08/01/751082775.jpg" group-title="افلام",خطة جيمي
+https://shoofmax.b-cdn.net/khotat-jimi/720p/index.m3u8
