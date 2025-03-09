@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1, ملف 1
+https://raw.githubusercontent.com/Kadikadari/servr.m3u/main/arabfilm.m3u
+#EXTINF:-1, ملف 2
+https://raw.githubusercontent.com/Kadikadari/servr.m3u/main/muslslat.m3u
