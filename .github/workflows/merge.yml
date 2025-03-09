@@ -1,0 +1,26 @@
+name: Merge M3U Playlists
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 تحميل المستودع
+        uses: actions/checkout@v3
+
+      - name: 🔄 دمج جميع ملفات M3U تلقائيًا
+        run: cat *.m3u > master_playlist.m3u
+
+      - name: 💾 رفع التعديلات إلى GitHub
+        run: |
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "GitHub Action"
+          git add master_playlist.m3u
+          git commit -m "🔄 تحديث القائمة تلقائيًا"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
