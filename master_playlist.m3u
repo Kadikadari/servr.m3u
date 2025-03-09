@@ -1,1 +1,25 @@
+name: Merge M3U Playlists
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Merge M3U files
+        run: cat playlist.m3u playlist2.m3u > master_playlist.m3u
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "kadikadari133@gmail.com"
+          git config --global user.name "GitHub Action"
+          git add master_playlist.m3u
+          git commit -m "Merged playlists"
+          git push
 
